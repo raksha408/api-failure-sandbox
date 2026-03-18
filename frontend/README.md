@@ -98,7 +98,7 @@ Local file paths do not work in GitHub README.
 
 Upload your video to Google Drive or YouTube and replace the link below:
 
-[Watch Demo](https://drive.google.com/file/d/1yW0ySrup9--jqtmhzobp5LmIdcFb3hu5/view?usp=sharing)
+[Watch Demo](https://drive.google.com/file/d/16KNVzJKAnXea_MOV0qb8qwZEjqoDWrOG/view?usp=sharing)
 
 ## Use Cases
 
@@ -135,9 +135,6 @@ Upload your video to Google Drive or YouTube and replace the link below:
 - Role-based access control
 
 
+## Author
 
-
-
-## License
-
-This project is licensed under the MIT License.
+Shriraksha Kulkarni
