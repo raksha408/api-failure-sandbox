@@ -94,10 +94,6 @@ npm start
 
 ## Demo Video
 
-Local file paths do not work in GitHub README.
-
-Upload your video to Google Drive or YouTube and replace the link below:
-
 [Watch Demo](https://drive.google.com/file/d/16KNVzJKAnXea_MOV0qb8qwZEjqoDWrOG/view?usp=sharing)
 
 ## Use Cases
@@ -125,7 +121,6 @@ Upload your video to Google Drive or YouTube and replace the link below:
 
 - Implement forgot password backend functionality with email reset link
 - Email service integration for password reset
-- Support for additional HTTP methods such as POST, PUT, DELETE
 - Custom JSON response editor
 - API request history and logs
 - Analytics dashboard for API usage
