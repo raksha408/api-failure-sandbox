@@ -1,70 +1,143 @@
-# Getting Started with Create React App
+# API Failure Sandbox
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+API Failure Sandbox is a full-stack MERN application built for learning purposes to simulate real-world API behaviors such as success, delay, and failure responses. This project helps frontend developers test applications effectively without relying on a fully developed backend.
 
-## Available Scripts
+## Problem Statement
 
-In the project directory, you can run:
+Frontend developers often face challenges when backend APIs are not ready, unstable, or lack proper error simulation. This creates difficulty in testing application behavior for scenarios like failures, delays, or unexpected responses.
 
-### `npm start`
+## Solution
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project provides a platform to create mock APIs with configurable responses, status codes, delays, and error states. It allows developers to simulate real-world API conditions and build more robust and resilient frontend applications.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Purpose
 
-### `npm test`
+This project was built as part of a learning process to gain hands-on experience in full stack development using the MERN stack, authentication, API design, and frontend-backend integration.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- User authentication using JWT
+- Register and login functionality
+- Create mock APIs dynamically
+- Configure endpoint, status code, and delay
+- Simulate API success and failure responses
+- Dashboard to manage APIs
+- Edit and update API configurations
+- Delete APIs
+- Protected routes for authenticated users
+- Forgot password UI flow (frontend only)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Frontend:
+- React.js
+- Tailwind CSS
+- React Router DOM
+- Axios
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Backend:
+- Node.js
+- Express.js
 
-### `npm run eject`
+Database:
+- MongoDB with Mongoose
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Authentication:
+- JSON Web Tokens (JWT)
+- bcrypt.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation and Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Make sure the following are installed:
 
-## Learn More
+- Node.js
+- npm (comes with Node.js)
+- MongoDB (local or MongoDB Atlas)
+- Git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Steps to Run the Project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository
 
-### Code Splitting
+git clone https://github.com/raksha408/api-failure-sandbox.git
+cd api-failure-sandbox
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Install backend dependencies
 
-### Analyzing the Bundle Size
+cd backend
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Install frontend dependencies
 
-### Making a Progressive Web App
+cd ../frontend
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Configure environment variables
 
-### Advanced Configuration
+Create a .env file inside the backend folder:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+PORT=5000  
+MONGO_URI=your_mongodb_connection_string  
+JWT_SECRET=your_secret_key  
 
-### Deployment
+5. Run backend server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+cd backend  
+npm start  
 
-### `npm run build` fails to minify
+6. Run frontend application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+cd frontend  
+npm start  
+
+## Demo Video
+
+Local file paths do not work in GitHub README.
+
+Upload your video to Google Drive or YouTube and replace the link below:
+
+[Watch Demo](https://drive.google.com/file/d/1yW0ySrup9--jqtmhzobp5LmIdcFb3hu5/view?usp=sharing)
+
+## Use Cases
+
+- Frontend development without backend dependency
+- Testing error handling scenarios
+- Simulating API latency
+- Validating application behavior under failures
+- Learning API flow and integration
+
+## Skills Demonstrated
+
+- Full stack development using MERN
+- REST API design and implementation
+- Authentication and authorization using JWT
+- React routing and state management
+- API integration using Axios
+- Middleware implementation in Express
+- Error handling and validation
+- CRUD operations
+- Responsive UI development using Tailwind CSS
+- Version control using Git and GitHub
+
+## Future Enhancements
+
+- Implement forgot password backend functionality with email reset link
+- Email service integration for password reset
+- Support for additional HTTP methods such as POST, PUT, DELETE
+- Custom JSON response editor
+- API request history and logs
+- Analytics dashboard for API usage
+- Deployment to cloud platforms
+- Shareable public mock API endpoints
+- Team collaboration features
+- Role-based access control
+
+
+
+
+
+## License
+
+This project is licensed under the MIT License.
